@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ — Dương Thị Thu Hoài</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            min-height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            color: #333; 
+            padding: 20px; 
+        }
+        .container { 
+            background: white; 
+            border-radius: 16px; 
+            padding: 40px; 
+            max-width: 600px; 
+            width: 100%; 
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3); 
+            text-align: center; 
+        }
+
+        nav { 
+            display: flex; 
+            justify-content: center; 
+            gap: 12px; 
+            margin-bottom: 24px; 
+            background: #f1f5f9; 
+            padding: 10px; 
+            border-radius: 30px; 
+        }
+        nav a { 
+            color: #667eea; 
+            text-decoration: none; 
+            font-weight: 600; 
+            padding: 6px 16px; 
+            border-radius: 20px; 
+            transition: all 0.3s ease;
+        }
+        nav a.active, nav a:hover { 
+            background: #667eea; 
+            color: white; 
+        }
+
+        h1 { color: #667eea; margin-bottom: 20px; font-size: 28px; }
+
+        .contact-list { text-align: left; margin-top: 20px; }
+        .contact-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            transition: transform 0.2s ease;
+        }
+        .contact-item:hover { transform: translateY(-2px); }
+        .contact-icon { font-size: 24px; }
+        .contact-detail strong { display: block; color: #4a5568; font-size: 13px; text-transform: uppercase; }
+        .contact-detail a, .contact-detail span { color: #2b6cb0; font-size: 15px; font-weight: 600; text-decoration: none; }
+        .contact-detail a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html" class="active">Liên hệ</a>
+        </nav>
+
+        <h1>Thông Tin Liên Hệ</h1>
+
+        <div class="contact-list">
+            <div class="contact-item">
+                <div class="contact-icon">👤</div>
+                <div class="contact-detail">
+                    <strong>Họ và tên</strong>
+                    <span>Dương Thị Thu Hoài (MSV: DTC235180077)</span>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div class="contact-detail">
+                    <strong>Số điện thoại</strong>
+                    <a href="tel:0343553674">0343553674</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">🏠</div>
+                <div class="contact-detail">
+                    <strong>Địa chỉ</strong>
+                    <span>Phú Bình, Thái Nguyên</span>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">🌐</div>
+                <div class="contact-detail">
+                    <strong>Facebook</strong>
+                    <a href="https://www.facebook.com/tay.hoai.195/?locale=vi_VN" target="_blank">Hoài Tây (tay.hoai.195)</a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">🐙</div>
+                <div class="contact-detail">
+                    <strong>GitHub Repository</strong>
+                    <a href="https://github.com/Hoaitay195/devops-lab1-" target="_blank">github.com/Hoaitay195/devops-lab1-</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

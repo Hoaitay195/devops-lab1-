@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu — DevOps Lab 1</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        
+        /* Navigation Links */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            background: #f1f5f9;
+            padding: 10px;
+            border-radius: 30px;
+        }
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        nav a.active, nav a:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        h1 { color: #667eea; margin-bottom: 8px; font-size: 28px; }
+        h2 { color: #764ba2; margin-bottom: 20px; font-size: 16px; font-weight: normal; }
+
+        .info { background: #f8f9fa; border-radius: 8px; padding: 20px; margin: 16px 0; text-align: left; }
+        .info p { margin: 8px 0; font-size: 15px; }
+
+        .log-list {
+            text-align: left;
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+        .log-item {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #cbd5e1;
+        }
+        .log-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .log-item strong { color: #667eea; }
+
+        .footer { margin-top: 24px; font-size: 13px; color: #999; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html" class="active">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+        </nav>
+
+        <h1>Nhật Ký Thực Hành Lab 1</h1>
+        <h2>Môn học: DevOps — Tổng quan & CI/CD</h2>
+
+        <div class="info">
+            <p><strong>Sinh viên thực hiện:</strong> Dương Thị Thu Hoài</p>
+            <p><strong>Mã sinh viên:</strong> DTC235180077</p>
+            <p><strong>Lớp:</strong> CN KTPM K22A</p>
+        </div>
+
+        <div class="log-list">
+            <div class="log-item">
+                <strong>📌 Bước 1: Khởi tạo dự án</strong>
+                <p>Tạo kho chứa (repository) trên GitHub và thiết lập cấu trúc trang web cơ bản với HTML/CSS.</p>
+            </div>
+            <div class="log-item">
+                <strong>📌 Bước 2: Cấu hình GitHub Actions</strong>
+                <p>Xây dựng file workflow tự động hóa (.github/workflows) để kích hoạt pipeline khi đẩy code.</p>
+            </div>
+            <div class="log-item">
+                <strong>📌 Bước 3: Tự động triển khai (Auto Deploy)</strong>
+                <p>Tích hợp GitHub Pages, giúp mã nguồn tự động build và xuất bản live ngay khi push commit mới.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>DevOps Lab 1 — Tự động hóa quy trình với Git & GitHub Actions</p>
+        </div>
+    </div>
+</body>
+</html>
